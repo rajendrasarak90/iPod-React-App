@@ -1,0 +1,178 @@
+/* This is the CSS code for styling the iPod interface */
+
+/* Overall styles */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the iPod */
+.iPod-container {
+  height: 75%;
+  width: 300px;
+  background-color: #e0dede;
+  border-radius: 35px;
+  box-shadow: inset 0 0 16px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .iPod-container {
+    height: 85%;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .iPod-container {
+    height: 80%;
+    max-width: 250px;
+  }
+}
+
+
+/* Display area for the iPod */
+.display {
+  height: 45%;
+  width: 93%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 4px solid black;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 7%;
+  background-image: url('https://images.pexels.com/photos/1135995/pexels-photo-1135995.jpeg?cs=srgb&dl=pexels-bob-clark-1135995.jpg&fm=jpg');
+}
+
+/* BUTTONS /
+  / Container for the buttons */
+.buttons-container {
+  height: 40%;
+  width: 75%;
+  margin: 6% auto;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared button styles */
+.button {
+  border: none;
+  background: none;
+  width: 25%;
+  color: rgb(138, 138, 138);
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Menu button */
+.menu-button {
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  height: 30%;
+  width: 50%;
+}
+
+/* Buttons in the center of the button container */
+.centre-buttons {
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+
+/* Previous button */
+.prev-button {
+  height: 100%;
+}
+
+/* Select button */
+.select-button {
+  height: 100%;
+  width: 40%;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+/* Next button */
+.next-button {
+  height: 100%;
+}
+
+/* Play/pause button */
+.play-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  height: 30%;
+}
+
+/* Menu /
+  / Styles for the main menu */
+.main-menu {
+  list-style: none;
+  box-sizing: border-box;
+  color: black;
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  width: 50%;
+  position: absolute;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 1px 0 5px 0 rgba(160, 160, 160, 0.7);
+}
+
+/* Main menu header */
+.main-menu h2 {
+  padding-left: 5px;
+}
+
+/* Menu item styles */
+.menu-item {
+  padding: 5px 5px;
+  position: relative;
+}
+
+/* Active menu item style */
+.active {
+  background-color: rgb(62, 149, 219);
+  color: aliceblue;
+
+}
+.arrow-icon{
+  position: absolute;
+  right: 5px;
+}
+.remove{
+  display: none;
+}
+
+.menu-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}

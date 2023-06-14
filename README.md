@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # iPod React Application
 
 iPod is simple mini project built in react. It is just a User Interfase of physical iPod or prototype which shows music player functionality.
@@ -26,3 +27,17 @@ Start the react application.
 6. On clicking on on menu there is sub menu inside it like in Music option, it has sub menu with options **All songs**, **Artists** & **Albums** etc.
 
 ## Thank You ...!
+=======
+# iPod React Application 
+iPod is simple mini project built in react. It is just a User Interfase of physical iPod or prototype which shows music player functionality.
+
+## In the project directory, you can run:
+### 1 `npm install`
+Install all the dependencies.
+
+### 2 `npm start`
+Start the react application.
+
+### Hosted URL
+https://ipod-react-app.onrender.com/
+>>>>>>> 65c1a6ab8a9a9615bd717c2bdacdd4f55a9e1ada

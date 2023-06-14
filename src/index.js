@@ -1,17 +1,11 @@
-// Importing necessary modules from react and react-dom
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
-
-// Importing main App component from App.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
 
-// Getting root element from HTML document
-const rootElement = document.getElementById("root");
-
-// Rendering the App component wrapped in StrictMode component on the root element
-ReactDOM.render(
-  <StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-  rootElement
+  </React.StrictMode>
 );

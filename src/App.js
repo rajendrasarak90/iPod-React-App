@@ -2,7 +2,6 @@
 import Buttons from "./Buttons";
 import Display from "./Display";
 import React from "react";
-import "./styles.css";
 import ZingTouch from "zingtouch";
 
 // Defining the App component
@@ -19,7 +18,7 @@ class App extends React.Component {
         settings: false,
         all_songs: false,
         artists: false,
-        albums: false
+        albums: false,
       },
     };
   }
@@ -28,7 +27,7 @@ class App extends React.Component {
   handleButtonClick = (e) => {
     let menuList = document.querySelectorAll(".menu-item");
     let arrowIcon = document.querySelectorAll(".arrow-icon");
-    for(let i=0 ; i<menuList.length ; i++) {
+    for (let i = 0; i < menuList.length; i++) {
       let element = menuList[i];
       if (element !== e.target) {
         element.classList.remove("active");
@@ -60,7 +59,7 @@ class App extends React.Component {
         if (nav === item) menuItems[item] = true;
         else menuItems[item] = false;
       }
-      console.log("in navigate music: ", this.state.menuItems)
+      console.log("in navigate music: ", this.state.menuItems);
       this.setState({
         menuItems,
       });

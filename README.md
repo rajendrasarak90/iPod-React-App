@@ -4,7 +4,7 @@ iPod is simple mini project built in react. It is just a User Interfase of physi
 
 ### Hosted URL
 
-https://ipod-react-app.onrender.com/
+https://rajendrasarak90.github.io/iPod-React-App/
 
 ## In the project directory, you can run:
 
